@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "swissknife"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.homepage     = "http://intergitlab.antena3tv.es/ios/swissknife"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Alberto Ortega" => "alberto.ortega@i3television.es" }
-  s.source       = { :git => "git@intergitlab.antena3tv.es:ios/swissknife.git", :tag => "0.0.1" }
+  s.source       = { :git => "git@intergitlab.antena3tv.es:ios/swissknife.git", :tag => "0.0.2" }
   
   s.ios.deployment_target = "7.0"
   s.tvos.deployment_target = "9.0"
