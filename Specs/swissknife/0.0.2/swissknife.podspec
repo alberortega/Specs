@@ -38,8 +38,9 @@ Pod::Spec.new do |s|
   end
 
 
-  s.ios.subspec 'AlertView' do |s1|
+  s.subspec 'AlertView' do |s1|
     s1.source_files = 'Classes/Categories/AlertView/**/*.{h,m}'
+    s1.ios.deployment_target = "7.0"
   end
 
   s.subspec 'ViewController' do |s1|
