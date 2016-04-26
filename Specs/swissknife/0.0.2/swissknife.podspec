@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files  = 'Classes/**/*.{h,m}'
+  s.tvos.exclude_files = "Classes/Categories/AlertView/*.*"
   
   s.subspec 'Image' do |s1|
     s1.source_files = 'Classes/Categories/Image/**/*.{h,m}'
