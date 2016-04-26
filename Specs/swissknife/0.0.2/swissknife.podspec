@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.source_files  = 'Classes/**/*.{h,m}'
-  s.tvos.exclude_files = "Classes/Categories/AlertView/*.*"
-  
+  s.tvos.exclude_files = "Classes/Categories/AlertView/*.*", "Classes/Categories/Screen/*.*"
+
   s.subspec 'Image' do |s1|
     s1.source_files = 'Classes/Categories/Image/**/*.{h,m}'
   end
@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Screen' do |s1|
     s1.source_files = 'Classes/Categories/Screen/**/*.{h,m}'
+    s1.ios.deployment_target = "7.0"
   end
 
   s.subspec 'URLConnection' do |s1|
